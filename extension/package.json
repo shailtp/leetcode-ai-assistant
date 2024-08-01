@@ -1,15 +1,12 @@
 {
-  "name": "extension",
+  "name": "leetcode-ai-assistant",
   "version": "1.0.0",
+  "description": "Autofill code or pseudocode on Leetcode using AI.",
   "main": "background.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node background.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "dotenv": "^10.0.0"
   }
 }
