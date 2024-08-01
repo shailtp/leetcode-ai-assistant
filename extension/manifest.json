@@ -4,6 +4,7 @@
     "version": "1.0",
     "description": "Autofill code or pseudocode on Leetcode using AI.",
     "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://api.groq.com/*"],
     "background": {
       "service_worker": "background.js"
     },
@@ -14,8 +15,11 @@
       }
     ],
     "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png"
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
     }
   }
-  
