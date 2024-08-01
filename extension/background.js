@@ -1,11 +1,11 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const { prompt, type } = request;
   
-    fetch('https://api.openai.com/v1/engines/davinci-codex/completions', {
+    fetch('https://api.groq.com/v1/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer YOUR_OPENAI_API_KEY'
+        'Authorization': 'Bearer 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'
       },
       body: JSON.stringify({
         prompt: `Generate ${type === 'full' ? 'full code' : 'pseudocode'} for this problem: ${prompt}`,
